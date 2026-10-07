@@ -1,0 +1,23 @@
+name: Feature idea
+description: Suggest something that would help your table
+labels: ["idea"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Tell us about the moment at your table where this would help.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+  - type: dropdown
+    id: role
+    attributes:
+      label: You are a...
+      options:
+        - DM
+        - Player
+        - Both
